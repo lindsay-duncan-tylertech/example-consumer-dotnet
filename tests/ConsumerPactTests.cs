@@ -38,6 +38,7 @@ namespace tests
             };
 
             pact = Pact.V3("pactflow-example-consumer-dotnet", "pactflow-example-provider-dotnet", Config).WithHttpInteractions();
+            Console.WriteLine($"Pact Dir: {Config.PactDir}");
         }
 
         [Fact]
